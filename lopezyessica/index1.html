@@ -1,0 +1,167 @@
+export default function PaginaMedioAmbiente() {
+  return (
+    <div className="min-h-screen bg-green-50 text-gray-800">
+      {/* Header */}
+      <header className="bg-green-700 text-white shadow-lg">
+        <div className="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
+          <h1 className="text-3xl font-bold">EcoAmbiente</h1>
+          <nav className="space-x-6 text-lg">
+            <a href="#inicio" className="hover:text-green-200">Inicio</a>
+            <a href="#servicios" className="hover:text-green-200">Servicios</a>
+            <a href="#proyectos" className="hover:text-green-200">Proyectos</a>
+            <a href="#contacto" className="hover:text-green-200">Contacto</a>
+          </nav>
+        </div>
+      </header>
+
+      {/* Hero */}
+      <section
+        id="inicio"
+        className="relative bg-cover bg-center h-[500px] flex items-center justify-center"
+        style={{
+          backgroundImage:
+            "url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1600&auto=format&fit=crop')",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="relative z-10 text-center text-white px-6">
+          <h2 className="text-5xl font-bold mb-6">
+            Soluciones Ambientales Sustentables
+          </h2>
+          <p className="text-xl max-w-2xl mx-auto mb-8">
+            Consultoría ambiental especializada en impacto ambiental,
+            cumplimiento normativo y desarrollo sostenible.
+          </p>
+          <button className="bg-green-600 hover:bg-green-500 transition px-8 py-3 rounded-2xl text-lg font-semibold shadow-lg">
+            Conocer más
+          </button>
+        </div>
+      </section>
+
+      {/* Servicios */}
+      <section id="servicios" className="py-20 px-6 max-w-7xl mx-auto">
+        <h3 className="text-4xl font-bold text-center text-green-700 mb-14">
+          Nuestros Servicios
+        </h3>
+
+        <div className="grid md:grid-cols-3 gap-8">
+          <div className="bg-white rounded-3xl shadow-xl p-8 hover:scale-105 transition">
+            <div className="text-5xl mb-4">🌿</div>
+            <h4 className="text-2xl font-bold mb-3">Impacto Ambiental</h4>
+            <p className="text-gray-600 leading-relaxed">
+              Elaboración de Manifestaciones de Impacto Ambiental (MIA),
+              estudios técnicos y cumplimiento regulatorio.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-3xl shadow-xl p-8 hover:scale-105 transition">
+            <div className="text-5xl mb-4">♻️</div>
+            <h4 className="text-2xl font-bold mb-3">Gestión Ambiental</h4>
+            <p className="text-gray-600 leading-relaxed">
+              Desarrollo de programas ambientales, monitoreo y estrategias
+              para minimizar impactos.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-3xl shadow-xl p-8 hover:scale-105 transition">
+            <div className="text-5xl mb-4">🌎</div>
+            <h4 className="text-2xl font-bold mb-3">Sustentabilidad</h4>
+            <p className="text-gray-600 leading-relaxed">
+              Implementación de soluciones sostenibles para proyectos de
+              energía, hidrocarburos e infraestructura.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Proyectos */}
+      <section id="proyectos" className="bg-green-100 py-20 px-6">
+        <div className="max-w-7xl mx-auto">
+          <h3 className="text-4xl font-bold text-center text-green-700 mb-14">
+            Proyectos Destacados
+          </h3>
+
+          <div className="grid md:grid-cols-2 gap-10">
+            <div className="bg-white rounded-3xl overflow-hidden shadow-xl">
+              <img
+                src="https://images.unsplash.com/photo-1473773508845-188df298d2d1?q=80&w=1200&auto=format&fit=crop"
+                alt="Proyecto ambiental"
+                className="h-64 w-full object-cover"
+              />
+              <div className="p-6">
+                <h4 className="text-2xl font-bold mb-3">
+                  Evaluación Ambiental Regional
+                </h4>
+                <p className="text-gray-600">
+                  Desarrollo de estudios ambientales para proyectos energéticos
+                  y de infraestructura en México.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-3xl overflow-hidden shadow-xl">
+              <img
+                src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?q=80&w=1200&auto=format&fit=crop"
+                alt="Conservación ambiental"
+                className="h-64 w-full object-cover"
+              />
+              <div className="p-6">
+                <h4 className="text-2xl font-bold mb-3">
+                  Programas de Conservación
+                </h4>
+                <p className="text-gray-600">
+                  Implementación de medidas de mitigación y conservación de
+                  recursos naturales.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contacto */}
+      <section id="contacto" className="py-20 px-6 max-w-5xl mx-auto">
+        <h3 className="text-4xl font-bold text-center text-green-700 mb-12">
+          Contáctanos
+        </h3>
+
+        <div className="bg-white rounded-3xl shadow-xl p-10 grid md:grid-cols-2 gap-10">
+          <div>
+            <h4 className="text-2xl font-bold mb-4">Información</h4>
+            <p className="mb-3">📍 Hidalgo, México</p>
+            <p className="mb-3">📧 contacto@ecoambiente.com</p>
+            <p className="mb-3">📞 +52 771 000 0000</p>
+          </div>
+
+          <form className="space-y-4">
+            <input
+              type="text"
+              placeholder="Nombre"
+              className="w-full border border-gray-300 rounded-xl p-3"
+            />
+            <input
+              type="email"
+              placeholder="Correo electrónico"
+              className="w-full border border-gray-300 rounded-xl p-3"
+            />
+            <textarea
+              placeholder="Escribe tu mensaje"
+              rows="5"
+              className="w-full border border-gray-300 rounded-xl p-3"
+            ></textarea>
+            <button className="bg-green-700 hover:bg-green-600 text-white px-6 py-3 rounded-2xl font-semibold transition">
+              Enviar mensaje
+            </button>
+          </form>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-green-800 text-white py-6 text-center">
+        <p>
+          © 2026 EcoAmbiente | Consultoría Ambiental y Sustentabilidad
+        </p>
+      </footer>
+    </div>
+  );
+}
